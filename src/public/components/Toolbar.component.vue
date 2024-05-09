@@ -23,8 +23,8 @@ export default {
 
         </router-link>
         <div class="ml-4 flex gap-3">
-          <pv-button class="bg-black-alpha-70 text-white border-transparent" @click="changeLanguage('en')" aria-label="Translate english"> EN </pv-button>
-          <pv-button class="bg-black-alpha-70 text-white border-transparent" @click="changeLanguage('es')" aria-label="Translate spanish"> ES </pv-button>
+          <pv-button class="custom-button" @click="changeLanguage('en')" aria-label="Translate english"> EN </pv-button>
+          <pv-button class="custom-button" @click="changeLanguage('es')" aria-label="Translate spanish"> ES </pv-button>
         </div>
       </template>
     </pv-toolbar>
@@ -42,7 +42,23 @@ export default {
 
 .route-text:hover{
   cursor: pointer;
-  transform:scale(1.1);
-  transition: ease-in 0.3s;
+}
+.custom-button {
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  background-color: #45a049;
+  color: white;
 }
 </style>
