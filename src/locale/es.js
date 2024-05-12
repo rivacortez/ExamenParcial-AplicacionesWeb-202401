@@ -3,7 +3,7 @@ const es = {
         phrase:'Bienvenidos a HIGN'
     },
     notfound: {
-        notfoundTitle:'Página no encontrada :(',
+        notfoundTitle:'Página no encontrada',
         warning:'Por favor regrese a la página de inicio',
         backHome:'Ir a Inicio'
     },
